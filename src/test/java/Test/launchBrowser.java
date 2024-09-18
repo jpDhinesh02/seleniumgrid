@@ -18,7 +18,7 @@ public class launchBrowser {
 	}
 
 	@Test
-	public void launchFireFox() throws MalformedURLException {
+	public void launchFireFox() throws MalformedURLException, InterruptedException {
 		WebDriver driver = seleniumGrid.gridDriver("firefox");
 		System.out.println("Firefox browser Start");
 		driver.get("https://www.google.com/");
