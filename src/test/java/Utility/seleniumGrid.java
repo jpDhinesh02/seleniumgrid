@@ -12,12 +12,12 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 public class seleniumGrid {
 
     public static WebDriver gridDriver(String browserName) throws MalformedURLException, InterruptedException {
-        runBatchFile();
-        Thread.sleep(2500);
+        // runBatchFile();
+        // Thread.sleep(2500);
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("browserName", browserName);
         capabilities.setCapability("platformName", Platform.WIN10);
-        WebDriver driver = new RemoteWebDriver(new URL(" http://172.25.10.171:4444/wd/hub"), capabilities);
+        WebDriver driver = new RemoteWebDriver(new URL(" http://0.0.0.0:4444/wd/hub"), capabilities);
         return driver;
     }
 
